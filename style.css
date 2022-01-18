@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+     /* footer support */
+     position: relative;
+     min-height: 100%;
+}
+
+body {
+    background-color: #328CC1;
+    color: rgba(12, 23, 37, 0.678);
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.6; 
+    /* footer support */
+    margin-bottom: 100px;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding:  40px 0;
+    background-color: #083C5D;
+}
+
+.title {
+    font-size: 32px;
+    color: #f0f0f0;
+}
