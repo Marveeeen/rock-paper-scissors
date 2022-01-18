@@ -34,3 +34,74 @@ body {
     font-size: 32px;
     color: #f0f0f0;
 }
+
+/* MAIN */
+.main {
+    margin-top: 40px;
+    text-align: center;
+}
+
+    .scoreboard {
+        margin-bottom: 15px;
+    }
+        .score-info {
+            font-size: 32px;
+        }
+
+        .score-message {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .score-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 400px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+
+            .scores-box {
+                width: 170px;
+            }
+
+                .score {
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+    .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+        img {
+            border-radius: 20px;
+            height: 180px;
+            width: 180px;
+        }
+
+        .btn {
+            border-radius: 10px;
+        }
+
+        .btn-square {
+            height: 180px;
+            width: 180px;
+        }
+
+        .btn #rock:hover {
+            box-shadow: 0px 10px 50px rgba(2, 43, 105, 0.7);
+        }
+        
+        .btn #paper:hover {
+            box-shadow: 0px 10px 50px rgba(219, 52, 60, 0.7);
+        }
+        
+        .btn #scissors:hover {
+            box-shadow: 0px 10px 50px rgba(52, 219, 127, 0.7);
+        }

@@ -18,5 +18,52 @@
     <header class="header">
         <h1 class="title">ROCK PAPER SCISSORS</h1>
     </header>
+
+    <main class="main">
+        <div class="scoreboard">
+            <h2 class="score-info" id="scoreInfo">
+                Kindly Choose your Weapon
+            </h2>
+
+            <h3 class="score-message" id="scoreMessage">
+                First to score 5 points wins the game
+            </h3>
+            <div class="score-container">
+                <div class="score-box">
+                    <div class="sign" id="playerSign">❔</div>
+                    <p class="score" id="playerScore">Player: 0</p>
+                </div>
+                <div class="score-box">
+                    <div class="sign" id="computerSign">❔</div>
+                    <p class="score" id="computerScore">Computer: 0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-square" id="rockBtn">
+                <img
+                id="rock"
+                src="data:image/jpeg;base64,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"
+                alt=""
+                />
+            </button>
+            <button class="btn btn-square" id="paperBtn">
+                <img
+                id="paper"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMsAAAD4CAMAAAB1y+ICAAAAyVBMVEX///8Ah9oAAADf394AjNsAidqUk5KLiokimd9iseZ9vurn9fyPxuyq0vDM4/bB3fS52fLa7vkAkNxCouEsneD0/P5/vembye3d7PnV6vifze5EpuNls+fYAADfTEeHw+sATXbCMz8KCwzr6+tta2pbWFceVniCMi5/EQfeAAB1dna3t7cXGBja2tonKChGRkc8YnxJaX7OP0N/hYdgc4FxfIRacYGChog5YXwUVXjJycqpqalYufB1xvTn/P+KzPPH7f+s3/zJ7v+0Qo+VAAAD10lEQVR4nO2dWW/TQBSFw4S2tCnQAAW6jInrpIvpFmfpRpOW//+jsJFTVbkzQqFq5szM+Z6sozz4k2Z07di+t9EghERP1vSNzKbSU/7RM6t0VXdVcHQsMyDKczYuMKNjcvJfq3Vp9JRpmTXVmiFN9GufzctYU01DShfX0AUTumBCF0zogsk/XW7vnn7gu0teXkv/rI89d8nUwYE6rVPPXc4qF1Wnnrs0zss1ltfHvrtk+cXqLPXd5Tm+uhy+k6TaEAJxGIFLSGuMLm6hCyZ0wSQGl+s9SaENIRDXFpfOW0mqDSEQnQjWGF3cQhdM6IJJDC6X++vz/Cr0LxECsX8ZQd2/amwLEi0zIBpXEewXuriFLpjQBRObS39DcF/oe5kC0bfV/TeSVBtCIGx1f7DdmmeS6IkIgdgeRLBf6OIWumBCF0xsLuNNwbTQU5kCMY6g7o/aO/O0Ey1DINqjCPYLXdxCF0zogonNZfhe8FjoR5kCMYyh7n8QPCT6t0yBYN3HhC6Y0AWTGFxGHyWFfjCkONjqS0h1f7glqK7HZAqE7XospP1CF7fQBRO6YGKt+/K2rbyvfFj+zeICxFD3x7uSQk8NKQ625y8h7Re6uIUumNAFE5vLoC1J9MSQ4mB7fyykut//IZgW+l6mQNjetwxpv9DFLXTBhC6Y2FyuPHxv3Pa9WGdFkmpDCIS17svPGLz9ziKk/fLkcpfP2vV571L1HZ81U/PcpRlQv76QXEJaY0Ht/ef46mL4fn/F1+/3r2XfAvS+Cuu2fkohrTG6uIUumNAFkxhcOp8kqTaEQNjq/uFnwV6q92QKBHsOY0IXTOiCCV0wsc4a+CJJtSEEwlYrbwy9/NFnDdxEsMbo4ha6YEIXTGJwCWnWwI3hvwH0/y5Y9zGhCyZ0wYQumNhnDQiqZ+IyBcI6a8DwDqCv7yhy1oBbYtj7dHELXTCJwaW/8XWe6h14EQIRx6wB+U0G+jcjLc4awIQumNAFkxhcxt8E1awBmQIRxayB74Jq1oBMgWDPYUzoggldMInBhbMG3LLYrAE/e0KGtF/o4ha6YEIXTBaYNbBV1v3lDxBYgBh6Dg+3xOUO+vUYZw2AQhdM6IJJDC6jHXHbhj7DbieGuj/eFY830J+/RDVrIMsvZq3UvHc5V0rl9bHnLmcB9evLKpfTOvXcpZGXa2zWsM93l8bt3dMPfHUZtOoG/q3W7GgCPmvA+v5YSHW/vymo6r5MgYiq5/Az6LI86IIJXTAJ3yVTPUOanLz22byMnspMcVd1VwVHxzIDojxnm6N/mNbSX7KmbxgXGCEkLv4Aze1mkU7qytgAAAAASUVORK5CYII="
+                alt=""
+                />
+            </button>
+            <button class="btn btn-square" id="scissorsBtn">
+                <img
+                id="scissors"
+                src="https://thumbs.dreamstime.com/b/female-hand-sign-victory-sign-peace-sign-scissors-vector-color-flat-illustration-isolated-white-background-web-83128345.jpg"
+                alt=""
+                />
+            </button>
+        </div>
+
+    </main>
 </body>
 </html>
