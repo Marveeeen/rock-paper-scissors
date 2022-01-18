@@ -105,3 +105,98 @@ body {
         .btn #scissors:hover {
             box-shadow: 0px 10px 50px rgba(52, 219, 127, 0.7);
         }
+
+/* FOOTER */
+
+.footer  {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+/* MODAL */
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color:#658dc9;
+    text-align: center;
+    font-size: 30px;
+    user-select: none; 
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.btn-restart {
+    padding: 10px 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+  
+.overlay.active {
+    display: block;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 550px) {
+    .title {
+      font-size: 18px;
+    }
+  
+    .score-info {
+      font-size: 26px;
+    }
+  
+    .buttons {
+      gap: 10px;
+    }
+  
+    .btn-square {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .sign {
+      font-size: 50px;
+    }
+  
+    .modal {
+      width: 95%;
+    }
+}
